@@ -1,5 +1,5 @@
 require 'yaml'
-
+#TODO documentation
 class Hepburn
   attr_writer :next_char
   def initialize(tree = {}, default = nil, next_char = nil)
@@ -8,6 +8,7 @@ class Hepburn
     @default = default
   end
 
+  #TODO implement method iterativ
   def convert(string, index)
     if index >= string.length
       return ''
@@ -29,15 +30,6 @@ class Hepburn
     end
   end
 
-  def can_convert?(string, index)
-    old = string[index]
-    new = tree[old]
-    if new.respond_to? :can_convert?
-      new.can_convert?(string, index + 1)
-    else
-      old.nil?
-    end
-  end
   def self.to_hiragana(string)
     @@hiragana.convert(string.downcase, 0)
   end
