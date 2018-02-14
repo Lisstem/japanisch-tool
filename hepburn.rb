@@ -2,40 +2,40 @@ require 'yaml'
 #TODO documentation
 class Hepburn
   attr_writer :next_char
-  def initialize(tree = {}, default = nil, next_char = nil)
+  def initialize(tree = {}, next_char = nil, default = nil)
     @tree = tree
     @next_char = next_char
     @default = default
   end
 
-  #TODO implement method iterativ
-  def convert(string, index)
+  #TODO implement iterative method
+  def convert(string, index, default)
     if index >= string.length
       return ''
     end
     old = string[index]
     new = @tree[old]
     if new.respond_to? :convert
-      new.convert(string, index + 1)
+      new.convert(string, index + 1, default)
     elsif new.nil?
       if @next_char == self
-        return @next_char.convert(string, index + 1).insert(0, old)
+        return @next_char.convert(string, index + 1, default).insert(0, old)
       elsif @default.nil?
-        return @next_char.convert(string, index)
+        return @next_char.convert(string, index, default)
       else
-        return @next_char.convert(string, index).insert(0, @default)
+        return @next_char.convert(string, index, default).insert(0, @default)
       end
     else
-      @next_char.convert(string, index + 1).insert(0, new)
+      default.convert(string, index + 1, default).insert(0, new)
     end
   end
 
   def self.to_hiragana(string)
-    @@hiragana.convert(string.downcase, 0)
+    @hiragana.convert(string.downcase, 0, @hiragana)
   end
 
   def self.to_romaji(string)
-    @@romaji.convert(string, 0)
+    @romaji.convert(string, 0, @romaji)
   end
 
   def self.to_katakana(string)
@@ -46,19 +46,19 @@ class Hepburn
     copy.gsub!('ee', 'eー')
     copy.gsub!('oo', 'oー')
     copy.gsub!('ou', 'oー')
-    @@katakana.convert(copy, 0)
+    @katakana.convert(copy, 0, @katakana)
   end
 
   def self.hira_yaml
-    puts @@hiragana.to_yaml
+    puts @hiragana.to_yaml
   end
 
   def self.romaji_yaml
-    puts @@romaji.to_yaml
+    puts @romaji.to_yaml
   end
 
   def self.kata_yaml
-    puts @@katakana.to_yaml
+    puts @katakana.to_yaml
   end
 
 
@@ -124,12 +124,12 @@ class Hepburn
 
   w = Hepburn.new({'a' => 'わ', 'o' => 'を'}, 'w')
 
-  @@hiragana = Hepburn.new({'a' => 'あ', 'i' => 'い', 'u' => 'う', 'e' => 'え', 'o' => 'お', ',' => '、', '.' => '。',
+  @hiragana = Hepburn.new({'a' => 'あ', 'i' => 'い', 'u' => 'う', 'e' => 'え', 'o' => 'お', ',' => '、', '.' => '。',
                             'k' => k, 'g' => g, 's' => s, 'z' => z, 'j' => j, 't' => t, 'd' => d, 'c' => c, 'n' => n,
                             'h' => h, 'f' => f, 'b' => b, 'p' => p, 'm' => m, 'r' => r, 'y' => y, 'w' => w})
-  blub = [y, hh, h, ff, f, bb, b, pp, p, kk, k, gg, g, ss, s, zz, z, jj, j, tt, tc, t, c, dd, d,  n, m, r ,w, @@hiragana]
+  blub = [y, hh, h, ff, f, bb, b, pp, p, kk, k, gg, g, ss, s, zz, z, jj, j, tt, tc, t, c, dd, d,  n, m, r ,w, @hiragana]
   blub.each do |hepburn|
-    hepburn.next_char = @@hiragana
+    hepburn.next_char = @hiragana
   end
 
 
@@ -212,7 +212,7 @@ class Hepburn
                        'バ' => 'bba', 'ビ' => bbik, 'ブ' => 'bbu', 'ベ' => 'bbe', 'ボ' => 'bbo',
                        'パ' => 'ppa', 'ピ' => ppik, 'プ' => 'ppu', 'ペ' => 'ppe', 'ポ' => 'ppo'},'ッ')
 
-  @@romaji = Hepburn.new({'あ' => 'a', 'い' => 'i', 'う' => 'u', 'え' => 'e', 'お' => 'o', '、' => ',', '。' => '.',
+  @romaji = Hepburn.new({'あ' => 'a', 'い' => 'i', 'う' => 'u', 'え' => 'e', 'お' => 'o', '、' => ',', '。' => '.',
                           'か' => 'ka', 'き' => ki, 'く' => 'ku', 'け' => 'ke', 'こ' => 'ko',
                           'が' => 'ga', 'ぎ' => gi, 'ぐ' => 'gu', 'げ' => 'ge', 'ご' => 'go',
                           'さ' => 'sa', 'し' => shi, 'す' => 'su', 'せ' => 'se', 'そ' => 'so',
@@ -241,12 +241,12 @@ class Hepburn
                           'ラ' => 'ra', 'リ' => rik, 'ル' => 'ru', 'レ' => 're', 'ロ' => 'ro',
                           'ヤ' => 'ya', 'ユ' => 'yu', 'ヨ' => 'yo', 'ワ' => 'wa', 'ヲ' => 'wo', 'ッ' => tsuk2
                          })
-  blub = [ki, gi, shi, ji, chi, ni, hi, bi, pi, mi, ri, tsu, kki, ggi, sshi, jji, tchi, hhi, bbi, ppi, @@romaji,
+  blub = [ki, gi, shi, ji, chi, ni, hi, bi, pi, mi, ri, tsu, kki, ggi, sshi, jji, tchi, hhi, bbi, ppi, @romaji,
           ik, uk, vuk, kik, gik, shik, suk, jik, zuk, chik, tsuk, tek, tok, dek, dok, nik, hik, fuk, bik, pik, mik, rik,
           kik, ggik, sshik, ssuk, jjik, zzuk, tchik, ttsuk, ttek, ttok, ddek, ddok, hhik, ffuk, bbik, ppik, tsuk2]
 
   blub.each do |hepburn|
-    hepburn.next_char = @@romaji
+    hepburn.next_char = @romaji
   end
 
 
@@ -324,15 +324,28 @@ class Hepburn
   w = Hepburn.new({'a' => 'ワ', 'i' => 'ウィ', 'e' => 'ウェ', 'o' => 'ウォ'}, 'w')
   v = Hepburn.new({'a' => 'ヴァ', 'i' => 'ヴィ', 'u' => 'ヴ', 'e' => 'ヴェ', 'o' => 'ヴォ'})
 
-  @@katakana = Hepburn.new({'a' => 'ア', 'i' => 'イ', 'u' => 'ウ', 'e' => 'エ', 'o' => 'オ', ',' => '、', '.' => '。',
+  @katakana = Hepburn.new({'a' => 'ア', 'i' => 'イ', 'u' => 'ウ', 'e' => 'エ', 'o' => 'オ', ',' => '、', '.' => '。',
                             'k' => k, 'g' => g, 's' => s, 'z' => z, 'j' => j, 't' => t, 'd' => d, 'c' => c, 'n' => n,
                             'h' => h, 'f' => f, 'b' => b, 'p' => p, 'm' => m, 'r' => r, 'y' => y, 'w' => w, 'v' => v})
-  blub = [y, hh, h, ff, f, bb, b, pp, p, kk, k, gg, g, ss, s, zz, z, jj, j, tt, tc, t, c, dd, d,  n, m, r , w, v, @@katakana]
+  blub = [y, hh, h, ff, f, bb, b, pp, p, kk, k, gg, g, ss, s, zz, z, jj, j, tt, tc, t, c, dd, d,  n, m, r , w, v, @katakana]
   blub.each do |hepburn|
-    hepburn.next_char = @@katakana
+    hepburn.next_char = @katakana
   end
 end
 
+class String
+  def to_hiragana
+    Hepburn.to_hiragana(self)
+  end
+
+  def to_romaji
+    Hepburn.to_romaji(self)
+  end
+
+  def to_katakana
+    Hepburn.to_katakana(self)
+  end
+end
 
 #puts Hepburn.hira_yaml
 #puts Hepburn.romaji_yaml
