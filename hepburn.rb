@@ -2,42 +2,60 @@ require 'yaml'
 #TODO documentation
 class Hepburn
   attr_writer :next_char
-  def initialize(tree = {}, next_char = nil, default = nil)
+  def initialize(tree = {}, default = nil, next_char = nil)
     @tree = tree
     @next_char = next_char
     @default = default
   end
 
-  #TODO implement iterative method
-  def convert(string, index, default)
-    if index >= string.length
-      return ''
-    end
-    old = string[index]
-    new = @tree[old]
-    if new.respond_to? :convert
-      new.convert(string, index + 1, default)
-    elsif new.nil?
-      if @next_char == self
-        return @next_char.convert(string, index + 1, default).insert(0, old)
-      elsif @default.nil?
-        return @next_char.convert(string, index, default)
+  def convert(string)
+    tree = self
+    converted = ''
+    index = 0
+    while index < string.length
+      old = string[index]
+      new = tree.instance_variable_get(:@tree)[old.downcase]
+      if new.respond_to? :convert
+        tree = new
+        index = index + 1
+      elsif new.nil?
+        if tree.instance_variable_get(:@next_char) == tree
+          converted.insert(-1, old)
+          tree = tree.instance_variable_get(:@next_char)
+          index = index + 1
+        elsif tree.instance_variable_get(:@default).nil?
+          tree = tree.instance_variable_get(:@next_char)
+        else
+          converted.insert(-1, tree.instance_variable_get(:@default))
+          tree = tree.instance_variable_get(:@next_char)
+        end
       else
-        return @next_char.convert(string, index, default).insert(0, @default)
+        converted.insert(-1, new)
+        tree = self
+        index = index + 1
       end
-    else
-      default.convert(string, index + 1, default).insert(0, new)
     end
+
+    # dump last chars out of the queue
+    while tree.instance_variable_get(:@next_char) != tree
+      index = tree.instance_variable_get(:@default)
+      unless index.nil?
+        converted.insert(-1, index)
+      end
+      tree = tree.instance_variable_get(:@next_char)
+    end
+    converted
   end
 
   def self.to_hiragana(string)
-    @hiragana.convert(string.downcase, 0, @hiragana)
+    @hiragana.convert(string.downcase)
   end
 
   def self.to_romaji(string)
-    @romaji.convert(string, 0, @romaji)
+    @romaji.convert(string)
   end
 
+  #TODO apply downcase only to converted char
   def self.to_katakana(string)
     copy = string.downcase
     copy.gsub!('aa', 'aー')
@@ -46,7 +64,7 @@ class Hepburn
     copy.gsub!('ee', 'eー')
     copy.gsub!('oo', 'oー')
     copy.gsub!('ou', 'oー')
-    @katakana.convert(copy, 0, @katakana)
+    @katakana.convert(copy)
   end
 
   def self.hira_yaml
@@ -347,6 +365,15 @@ class String
   end
 end
 
+=begin
+used for test purposes
+test = "askdhajhdzahdhehhehihuchichehchachiWach"
+puts test
+puts test.to_hiragana
+puts test.to_katakana
+puts test.to_hiragana.to_romaji
+puts test.to_katakana.to_romaji
+=end
 #puts Hepburn.hira_yaml
 #puts Hepburn.romaji_yaml
 #puts Hepburn.kata_yaml
