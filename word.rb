@@ -1,44 +1,49 @@
 class Word
-  attr_reader :kana, :kanji, :bedeutungen, :lection, :info
-  def initialize(kana, bedeutungen, kanji = nil, lection = nil, info = '')
+  attr_reader :kana, :kanji, :translations, :lection, :info
+  def initialize(kana, translations, kanji = nil, lection = 'default', info = '')
     @kana = kana
-    @bedeutungen = bedeutungen
+    @translations = translations
     @kanji = kanji
     @lection = lection
     @info = info
   end
 
   def to_s
-    "#{kana}#{" #{kanji}" unless kanji.nil?} #{bedeutungen.join(',')}"
+    "#{kana}#{" #{kanji}" unless kanji.nil?} #{translations.join(',')}"
   end
 
-  def match_bedeutung(guess)
-    @bedeutungen.each do |bedeutung|
-      if bedeutung.downcase == guess.downcase
+  def match_translation(guess)
+    @translations.each do |translation|
+      if translation.downcase == guess.strip.downcase
         return true
       end
     end
     false
   end
 
-  def match_all_bedeutungen(bedeutungen)
+  def match_all_translations(guesses)
+    guesses = guesses.strip!.split(',')
     count = 0
-    bedeutungen.each do |guess|
-      @bedeutungen.each do |bedeutung|
-        if guess.downcase == bedeutung.downcase
+    guesses.each do |guess|
+      @translations.each do |translation|
+        if guess.downcase == translation.strip.downcase
           count = count + 1
           break
         end
       end
     end
-    count == @bedeutungen.count
+    count == @translations.count
   end
 
   def match_kana(guess)
-    @kana.downcase == guess.downcase
+    @kana.downcase == guess.strip.to_katakana || @kana.downcase == guess.strip.hiragana
   end
 
   def match_kanji(guess)
-    @kanji.downcase == guess.downcase
+    @kanji.downcase == guess.strip.downcase
+  end
+
+  def my_hash
+    self.to_s.hash
   end
 end
