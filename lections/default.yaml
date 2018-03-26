@@ -1,0 +1,25 @@
+--- &1 !ruby/object:Lection
+name: default
+words:
+- !ruby/object:Word
+  kana: あまい
+  translations:
+  - süß
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なんで
+  translations:
+  - womit
+  kanji: 何で
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にほんりょうり
+  translations:
+  - japanisches Gericht
+  kanji: 日本りょうり
+  lection: *1
+  info: ''
+file: default.yaml

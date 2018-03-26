@@ -15,10 +15,11 @@ class Lection
     @words << word
   end
 
-  def from_file(filepath)
+  def self.from_file(filepath)
     if File.file?(filepath)
       lection = YAML::load(File.open(filepath, 'r'))
       lection.file = filepath
+      lection
     else
       nil
     end
@@ -103,5 +104,26 @@ class Lection
       raise IOError, "File \"#{file}\" does not exist."
     end
     return lections
+  end
+
+  def self.load_dir(directory)
+    lections = {}
+    if Dir.exist?(directory)
+      Dir.foreach(directory) do |file|
+        if file =~ /\.yaml/
+          begin
+            lection = Lection.from_file "#{directory}/#{file}"
+            lections[lection.name] = lection
+            puts "Loaded lection #{lection.name}."
+          rescue => ex
+            puts "Could not open lection from file #{directory}/#{file}."
+            puts ex.to_s
+          end
+        end
+      end
+    else
+      raise IOError, "Directory #{directory} does not exist."
+    end
+    lections
   end
 end

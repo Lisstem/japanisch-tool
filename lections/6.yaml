@@ -1,0 +1,387 @@
+--- &1 !ruby/object:Lection
+name: '6'
+words:
+- !ruby/object:Word
+  kana: あいだ
+  translations:
+  - zwischen
+  - Zwischenraum
+  - Ort dazwischen
+  kanji: 間
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ある
+  translations:
+  - da sein
+  - sich befinden (Gegenstände,Pflanzen)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あたらしい
+  translations:
+  - neu
+  - frisch
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: で
+  translations:
+  - Partikel (Mengenangabe)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ふるい
+  translations:
+  - alt
+  - altertümlich
+  kanji: 古い
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ふたり
+  translations:
+  - zwei Personen
+  kanji: 二人
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ふたつ
+  translations:
+  - zwei
+  kanji: 二つ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はなみ
+  translations:
+  - Blütenschau
+  kanji: 花見
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はし
+  translations:
+  - Brücke
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひだり
+  translations:
+  - links
+  - linke Seite
+  - Ort links
+  kanji: 左
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひとり
+  translations:
+  - eine Person
+  kanji: 一人
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひとつ
+  translations:
+  - ein
+  - eine
+  kanji: 一つ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いい
+  translations:
+  - gut
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いくつ
+  translations:
+  - wie viele?
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いる
+  translations:
+  - da sein
+  - sich befinden (Menschen
+  - Tiere)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いつつ
+  translations:
+  - fünf
+  kanji: 五つ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じんじゃ
+  translations:
+  - Shintou-Schrein
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: き
+  translations:
+  - Baum
+  kanji: 木
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きく
+  translations:
+  - hören
+  kanji: 聞く
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こども
+  translations:
+  - Kind
+  kanji: 子ども
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ここのつ
+  translations:
+  - neun
+  kanji: 九つ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まち
+  translations:
+  - Stadt
+  - Stadtviertel
+  kanji: 町
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まえ
+  translations:
+  - vorne
+  - Vorderseite
+  - Ort davor
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ましょう"
+  translations:
+  - Verbendung (Aufforderung lass uns…)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ましょうか"
+  translations:
+  - Verbendung (Aufforderung Wollen wir…?)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まわり
+  translations:
+  - um
+  - Umgebung
+  - Ort rings herum
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: みぎ
+  translations:
+  - rechts
+  - rechte Seite
+  - Ort rechts
+  kanji: 右
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: みっつ
+  translations:
+  - drei
+  kanji: 三つ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: むっつ
+  translations:
+  - sechs
+  kanji: 六つ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なか
+  translations:
+  - innen
+  - Innenraum
+  - Ort innerhalb
+  kanji: 中
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ななつ
+  translations:
+  - sieben
+  kanji: 七つ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: に
+  translations:
+  - Partikel (Ortsangabe)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~にん"
+  translations:
+  - Zählsuffix für Personen
+  kanji: "~人"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おんがく
+  translations:
+  - Musik
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おとな
+  translations:
+  - Erwachsener
+  kanji: 大人
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: プレーヤー
+  translations:
+  - Player
+  - Abspielgerät
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ラジオ
+  translations:
+  - Radio
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さけ
+  translations:
+  - Sake
+  - Alkohol
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: した
+  translations:
+  - unter
+  - untere Seite
+  - Ort darunter
+  kanji: 下
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: そば
+  translations:
+  - neben
+  - Seite
+  - Nähe
+  - Ort nahe
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: たくさん
+  translations:
+  - viel
+  - große Menge
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: たのしい
+  translations:
+  - lustig
+  - vergnüglich
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: てら
+  translations:
+  - buddhistischer Tempel (Kloster)
+  kanji: 寺
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: とお
+  translations:
+  - zehn
+  kanji: 十
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: うえ
+  translations:
+  - oben
+  - Oberseite
+  - Ort über
+  kanji: 上
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: うしろ
+  translations:
+  - hinten
+  - hintere Seite
+  - Ort hinter
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: うた
+  translations:
+  - Lied
+  - Gedicht
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: うたう
+  translations:
+  - singen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: やっつ
+  translations:
+  - acht
+  kanji: 八つ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: よっつ
+  translations:
+  - vier
+  kanji: 四つ
+  lection: *1
+  info: ''
+file: 6.yaml

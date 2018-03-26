@@ -1,0 +1,338 @@
+--- &1 !ruby/object:Lection
+name: '7'
+words:
+- !ruby/object:Word
+  kana: あける
+  translations:
+  - öffnen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あさごはん
+  translations:
+  - Frühstück
+  kanji: 朝ごはん
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あとで
+  translations:
+  - nachher
+  - später
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ばんごはん
+  translations:
+  - Abendessen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ちゅうがっこう
+  translations:
+  - Mittelschule
+  kanji: 中学校
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: どうぞ
+  translations:
+  - bitte (beim Anbieten)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: がいこく
+  translations:
+  - Ausland
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: がいこく人
+  translations:
+  - Ausländer
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ごろ
+  translations:
+  - gegen
+  - ungefähr um (Zeitangabe)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はじまる
+  translations:
+  - anfangen
+  - beginnen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はなし
+  translations:
+  - Gespräch
+  - Rede
+  - Unterhaltung
+  kanji: 話
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひるごはん
+  translations:
+  - Mittagessen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひるやすみ
+  translations:
+  - Mittagspause
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いちじかん
+  translations:
+  - eine Stunde lang
+  kanji: 一時間
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いちねんかん
+  translations:
+  - ein Jahr lang
+  kanji: 一年間
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: " mada desu"
+  translations:
+  - "(Nein),noch nicht."
+  kanji: いいえ、まだです。
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いっしょに
+  translations:
+  - zusammen
+  - miteinander
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅぎょう
+  translations:
+  - Unterricht
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅく
+  translations:
+  - Nachhilfeschule
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~かん"
+  translations:
+  - Suffix für Zeitdauer (…lang)
+  kanji: "~間"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かりる
+  translations:
+  - sich leihen
+  - mieten
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かす
+  translations:
+  - verleihen
+  - vermieten
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: これから
+  translations:
+  - von nun ab
+  - ab jetzt
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まだ
+  translations:
+  - noch
+  - immer noch
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まい~
+  translations:
+  - Präfix für Zeitabstand (jeden…)
+  kanji: 毎~
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まいあさ
+  translations:
+  - jeden Morgen
+  kanji: 毎あさ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まいばｎ
+  translations:
+  - jeden Abend
+  - jede Nacht
+  kanji: 毎ばん
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: " maitoshi"
+  translations:
+  - 毎年
+  - jedes Jahr
+  kanji: まいねん
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まいにち
+  translations:
+  - jeden Tag
+  kanji: 毎日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まいしゅう
+  translations:
+  - jede Woche
+  kanji: 毎週
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まいつき
+  translations:
+  - jeden Monat
+  kanji: 毎月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: もう
+  translations:
+  - schon
+  - bereits
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ならう
+  translations:
+  - lernen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ねんせい"
+  translations:
+  - Suffix für -klässler
+  kanji: "~年生"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ねる
+  translations:
+  - schlafen
+  - schlafen gehen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おきる
+  translations:
+  - aufstehen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しけん
+  translations:
+  - Test
+  - Examen
+  - Prüfung
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しめる
+  translations:
+  - schließen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: たてもの
+  translations:
+  - Gebäude
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~てください"
+  translations:
+  - Verbendung (Aufforderung zu einer Tätigkeit)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: とし
+  translations:
+  - Jahr
+  - Alter
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: としょかん
+  translations:
+  - Bibliothek
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: うんどうじょう
+  translations:
+  - Sportplatz
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: やきゅう
+  translations:
+  - Baseball
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: やすみ
+  translations:
+  - Pause
+  - Ruhe
+  - frei haben
+  kanji: 
+  lection: *1
+  info: ''
+file: 7.yaml

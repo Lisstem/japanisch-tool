@@ -1,0 +1,503 @@
+--- &1 !ruby/object:Lection
+name: '3'
+words:
+- !ruby/object:Word
+  kana: あぬ
+  translations:
+  - "(meine) ältere Schwester (Bezeichnung)"
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あに
+  translations:
+  - "(mein) älterer Bruder (Bezeichnung)"
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あるいて
+  translations:
+  - zu Fuß
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あした
+  translations:
+  - morgen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: バス
+  translations:
+  - Bus
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ちち
+  translations:
+  - "(mein) Vater (Bezeichnung)"
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ちかてつ
+  translations:
+  - U-Bahn
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: だれ
+  translations:
+  - wer?
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: で
+  translations:
+  - Partikel (Handlungsmittel)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: でんしゃ
+  translations:
+  - Zug
+  kanji: 電んしゃ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: どこ
+  translations:
+  - wo?
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: どれ
+  translations:
+  - welcher,e,s?
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: へ
+  translations:
+  - Partikel (Bewegungsrichtung)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: えいがかん
+  translations:
+  - Kino
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ふね
+  translations:
+  - Schiff
+  - Boot
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: が
+  translations:
+  - Partikel (Subjekt)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ぎんこう
+  translations:
+  - Bank
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ご
+  translations:
+  - fünf
+  kanji: 五
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はち
+  translations:
+  - acht
+  kanji: 八
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はは
+  translations:
+  - "(meine) Mutter"
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひこうき
+  translations:
+  - Flugzeug
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いち
+  translations:
+  - eins
+  kanji: 一
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いく
+  translations:
+  - gehen
+  kanji: 行く
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いま
+  translations:
+  - jetzt
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いもうと
+  translations:
+  - "(meine) jüngere Schwester"
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いもとうさん
+  translations:
+  - jüngere Schwester (höfliche Bezeichnung)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いぬ
+  translations:
+  - Hund
+  kanji: 犬
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~じ"
+  translations:
+  - Suffix für Uhrzeit,Stunden
+  kanji: "~時"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じてんしゃ
+  translations:
+  - Fahrrad
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅう
+  translations:
+  - zehn
+  kanji: 十
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅういち
+  translations:
+  - elf
+  kanji: 十一
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅうに
+  translations:
+  - zwölf
+  kanji: 十二
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かえる
+  translations:
+  - zurückkehren
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: から
+  translations:
+  - ab
+  - von
+  - aus
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かよく
+  translations:
+  - Familie
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きのう
+  translations:
+  - gestern
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きっさてん
+  translations:
+  - Café
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: く/きゅう
+  translations:
+  - neun
+  kanji: 九
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: くる
+  translations:
+  - kommen
+  kanji: 来る
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: くるま
+  translations:
+  - Auto
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きょう
+  translations:
+  - heute
+  kanji: 今日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まで
+  translations:
+  - bis
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ませんでした"
+  translations:
+  - Verbendung (standardhöflich,negativ,Vergangenheit)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ました"
+  translations:
+  - Verbendung (standardhöflich,positiv,Vergangenheit)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なな
+  translations:
+  - sieben
+  kanji: 七
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なんじ
+  translations:
+  - wie viel Uhr?
+  kanji: 何時
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ねこ
+  translations:
+  - Katze
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: に
+  translations:
+  - zwei
+  kanji: 二
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "…にすんでいます。"
+  translations:
+  - in… wohnen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おばあさん
+  translations:
+  - Großmutter
+  - Oma (höfl.Bezeichnung, Anrede)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おじいさん
+  translations:
+  - Großvater
+  - Opa (höfl.Bezeichnung, Anrede)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おかあさん
+  translations:
+  - Mutter
+  - Mama (höfl. Bezeichnung, Anrede)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おねえさん
+  translations:
+  - ältere Schwester (höfl. Bezeichnung, Anrede)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おにいさん
+  translations:
+  - älterer Bruder (höfl. Bezeichnung, Anrede)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おとうさん
+  translations:
+  - Vater
+  - Papa (höfl.Bezeichnung, Anrede)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おとうと
+  translations:
+  - "(mein) jüngerer Bruder"
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おとうとい
+  translations:
+  - vorgestern
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おとうとさん
+  translations:
+  - jüngerer Bruder (Bezeichnung)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おわる
+  translations:
+  - enden
+  - zu Ende gehen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: レストラン
+  translations:
+  - Restaurant
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ろく
+  translations:
+  - sechs
+  kanji: 六
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さん
+  translations:
+  - drei
+  kanji: 三
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: " yo"
+  translations:
+  - し、よ、よん
+  - 四
+  - vier
+  kanji: " yon"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: " nana"
+  translations:
+  - 七
+  - sieben
+  kanji: しち、なな
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ともだち
+  translations:
+  - Freund,in
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: となり
+  translations:
+  - neben
+  - Nebenseite
+  - Ort nebenan
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: うち
+  translations:
+  - Haus
+  - Wohnung
+  kanji: 家
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: わかる
+  translations:
+  - verstehen
+  - begreifen
+  - wissen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: よ、よん
+  translations:
+  - vier
+  kanji: 四
+  lection: *1
+  info: ''
+file: 3.yaml

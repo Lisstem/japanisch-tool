@@ -1,0 +1,413 @@
+--- &1 !ruby/object:Lection
+name: '8'
+words:
+- !ruby/object:Word
+  kana: あさって
+  translations:
+  - übermorgen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あそこ
+  translations:
+  - dort
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: バルコニー
+  translations:
+  - Balkon
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ベッド
+  translations:
+  - Bett
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ちゃのも
+  translations:
+  - Ess- und Wohnzimmer
+  kanji: 茶の間
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: だ
+  translations:
+  - Kopula (sein)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: だいどころ
+  translations:
+  - Küche
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: だんち
+  translations:
+  - Wohnsiedlung
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: でわない
+  translations:
+  - Kopula (nicht sein)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: フォーク
+  translations:
+  - Gabel
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ふろ(ば)
+  translations:
+  - Bad(ezimmer)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ふとん
+  translations:
+  - japanisches Bettzeug
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: げんかん
+  translations:
+  - Eingangsbereich
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: へや
+  translations:
+  - Zimmer
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いえ
+  translations:
+  - Wohnung
+  - Haus
+  kanji: 家
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いっかい
+  translations:
+  - Erdgeschoss
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いそがしい
+  translations:
+  - vielbeschäftigt
+  - viel zu tun haben
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じかん
+  translations:
+  - Zeit
+  - Freizeit
+  kanji: 時間
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅんび
+  translations:
+  - Vorbereitung
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~かい"
+  translations:
+  - Suffix für Etage
+  kanji: "~階"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かいだん
+  translations:
+  - Treppe
+  - Stufen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: けさ
+  translations:
+  - heute Morgen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きれいだ
+  translations:
+  - sauber
+  - schön
+  - ordentlich
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: キッチン
+  translations:
+  - Küche
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こうえん
+  translations:
+  - Park
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ここ
+  translations:
+  - hier
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こんばん
+  translations:
+  - heute Abend
+  kanji: 今ばん
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こしょう
+  translations:
+  - Pfeffer
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: もつ
+  translations:
+  - haben
+  - besitzen
+  - in der Hand halten
+  kanji: 持つ
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なべ
+  translations:
+  - Kochtopf
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ナイフ
+  translations:
+  - Messer
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なんかい
+  translations:
+  - welche Etage?
+  kanji: 何階
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にかい
+  translations:
+  - 1.Etage
+  kanji: 二階
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にわ
+  translations:
+  - Garten
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: パソコン
+  translations:
+  - PC
+  - Computer
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: リビング
+  translations:
+  - Wohnzimmer
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ろうか
+  translations:
+  - Flur
+  - Korridor
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: りょうり
+  translations:
+  - Gericht
+  - Speise
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さっき
+  translations:
+  - vorhin
+  - vor kurzem
+  - eben
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さんかい
+  translations:
+  - 2. Etage
+  kanji: 三階
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さら
+  translations:
+  - Teller
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さとう
+  translations:
+  - Zucker
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: シャワー
+  translations:
+  - Dusche
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しお
+  translations:
+  - Salz
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しずかだ
+  translations:
+  - ruhig
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しょうゆ
+  translations:
+  - Sojasoße
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: そうじ
+  translations:
+  - Putzen
+  - Saubermachen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: そこ
+  translations:
+  - dort
+  - da
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: すむ
+  translations:
+  - wohnen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: スプーン
+  translations:
+  - Löffel
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ている"
+  translations:
+  - Verbendung (Verlaufsform)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: テ一ブル
+  translations:
+  - Tisch
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: とうふ
+  translations:
+  - Tofu
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: トイレ
+  translations:
+  - Toilette
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: つくる
+  translations:
+  - herstellen
+  - zubereiten
+  - kochen
+  kanji: 作る
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: わるれる
+  translations:
+  - vergessen
+  kanji: 
+  lection: *1
+  info: ''
+file: 8.yaml

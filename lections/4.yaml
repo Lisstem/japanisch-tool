@@ -1,0 +1,460 @@
+--- &1 !ruby/object:Lection
+name: '4'
+words:
+- !ruby/object:Word
+  kana: あかい
+  translations:
+  - rot
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あまり~ ない
+  translations:
+  - nicht sehr
+  - nicht viel
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あの
+  translations:
+  - jener
+  - jene
+  - jenes
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あおい
+  translations:
+  - blau
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ちいさい
+  translations:
+  - klein
+  kanji: 小さい
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ちかい
+  translations:
+  - nah
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: だから
+  translations:
+  - deshalb
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: で
+  translations:
+  - Partikel (Handlungsort)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: どの
+  translations:
+  - welcher,e,s (S)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: えん
+  translations:
+  - Yen
+  kanji: 円
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ふで
+  translations:
+  - Schreibpinsel
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: げた
+  translations:
+  - japanische Holzsandalen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はなや
+  translations:
+  - Blumengeschäft
+  kanji: 花や
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はんばいき
+  translations:
+  - Verkaufsautomat
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "(お)はし"
+  translations:
+  - Essstäbchen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひと
+  translations:
+  - Mensch
+  - Person
+  kanji: 人
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ほんや
+  translations:
+  - Buchhandlung
+  kanji: 本や
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひゃく
+  translations:
+  - hundert
+  kanji: 百
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いくら
+  translations:
+  - wie teuer?
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いらっしゃいませ。
+  translations:
+  - Begrüßungsformel für einen Gast,Kunden
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こ
+  translations:
+  - Kind
+  kanji: 子
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: コンビニ
+  translations:
+  - 24 Stunden Mini-Supermarkt
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こんげつ
+  translations:
+  - dieser Monat
+  kanji: 今月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: この
+  translations:
+  - dieser,e,es + (S)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こんしゅう
+  translations:
+  - diese Woche
+  kanji: 今しゅう
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: くろい
+  translations:
+  - schwarz
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: くつ
+  translations:
+  - Schuhe
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まん
+  translations:
+  - zehntausend
+  kanji: 万
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: みせ
+  translations:
+  - Geschäft
+  - Filiale
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ね
+  translations:
+  - Satzschlusspartikel (nicht wahr?)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にくや
+  translations:
+  - Metzgerei
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おかな
+  translations:
+  - Geld
+  kanji: お金
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おおきい
+  translations:
+  - groß
+  kanji: 大きい
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おもしろう
+  translations:
+  - interessant
+  - unterhaltsam
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おんな
+  translations:
+  - Frau
+  kanji: 女
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おんなのひと
+  translations:
+  - Frau
+  - Dame
+  kanji: 女の人
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おんなのこ
+  translations:
+  - Mädchen
+  kanji: 女の子
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おとこ
+  translations:
+  - Mann
+  kanji: 男
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おとこのひと
+  translations:
+  - Mann
+  - Herr
+  kanji: 男の人
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おとこのこ
+  translations:
+  - Junge
+  kanji: 男の子
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おつり
+  translations:
+  - Wechselgeld
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おわん
+  translations:
+  - japanische Lackschale
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: パンや
+  translations:
+  - Bäckerei
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: らいげつ
+  translations:
+  - nächster Monat
+  kanji: 来月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: らいしゅう
+  translations:
+  - nächste Woche
+  kanji: 来週
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さかなや
+  translations:
+  - Fischgeschäfte
+  kanji: 魚や
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: せん
+  translations:
+  - tausend
+  kanji: 千
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: せんげつ
+  translations:
+  - letzter Monat
+  kanji: せん月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: せんしゅう
+  translations:
+  - letzte Woche
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しろい
+  translations:
+  - weiß
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しゅじい
+  translations:
+  - Kalligraphie
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: その
+  translations:
+  - dieser,e,es + (S)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: スーパー
+  translations:
+  - Supermarkt
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: たかい
+  translations:
+  - teuer
+  kanji: 高い
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: てにん
+  translations:
+  - Verkäufer,in
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: と
+  translations:
+  - Partikel (Handlungspartner mit)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: とおい
+  translations:
+  - weit entfernt
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: とけい
+  translations:
+  - Uhr
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: とても
+  translations:
+  - sehr
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~や"
+  translations:
+  - Suffix für Laden
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: やおや
+  translations:
+  - Obst- und Gemüsehändler
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: やすい
+  translations:
+  - billig
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: よ
+  translations:
+  - Satzschlusspartikel (nachdrückliche Aussage)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ユ一ロ
+  translations:
+  - Euro (Währung)
+  kanji: 
+  lection: *1
+  info: ''
+file: 4.yaml

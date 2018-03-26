@@ -1,0 +1,471 @@
+--- &1 !ruby/object:Lection
+name: '2'
+words:
+- !ruby/object:Word
+  kana: アメリカ
+  translations:
+  - Amerika
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あさ
+  translations:
+  - morgens
+  - am Morgen
+  - Morgen
+  kanji: 朝
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: べんきょう
+  translations:
+  - Lernen
+  - Studium
+  kanji: 勉強
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ぶどう
+  translations:
+  - Weintraube
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: でも
+  translations:
+  - aber
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ドイツ
+  translations:
+  - Deutschland
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: えいご
+  translations:
+  - Englisch
+  - englische Sprache
+  kanji: 英語
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ご"
+  translations:
+  - Suffix für Sprache
+  kanji: "~語"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ごはん
+  translations:
+  - gekochter Reis
+  - Mahlzeit
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ぎゅうんじゅう
+  translations:
+  - Kuhmilch
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はがき
+  translations:
+  - Postkarte
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひる
+  translations:
+  - Mittag
+  - am Mittag
+  - mittags
+  kanji: 昼
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: イギリス
+  translations:
+  - England
+  - Großbrittanien
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いつ
+  translations:
+  - wann?
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゃげいも
+  translations:
+  - Kartoffel
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~じん"
+  translations:
+  - Suffix für Volks-,Staatsangehörigkeit
+  kanji: "~人"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅうどう
+  translations:
+  - Judo
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ジュ一ス
+  translations:
+  - Saft
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かいもの
+  translations:
+  - Einkauf
+  - Einkäufe
+  kanji: 買いもの
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かく
+  translations:
+  - schreiben
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かう
+  translations:
+  - kaufen
+  kanji: 買う
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きっぷ
+  translations:
+  - Eintrittskarte
+  - Fahrkarte
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きって
+  translations:
+  - Briefmarke
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こうちゃ
+  translations:
+  - schwarzer Tee
+  kanji: こう茶
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: コ一ヒ
+  translations:
+  - Kaffee
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: くだもの
+  translations:
+  - Obst
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ません"
+  translations:
+  - Verbendung (standardhöflich,negativ)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ます"
+  translations:
+  - Verbendung (standardhöflich,positiv)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: メ一ル
+  translations:
+  - eMail
+  - SMS
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: みかん
+  translations:
+  - Mandarine
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: みる
+  translations:
+  - sehen
+  - betrachten
+  kanji: 見る
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: みず
+  translations:
+  - Wasser
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: も
+  translations:
+  - Partikel (auch)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なまえ
+  translations:
+  - Name
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なに
+  translations:
+  - was?
+  kanji: 何
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にく
+  translations:
+  - Fleisch
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: のみもの
+  translations:
+  - Getränk
+  kanji: 飲みもの
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: のむ
+  translations:
+  - trinken
+  kanji: 飲む
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: を
+  translations:
+  - Partikel (Objekt)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おちゃ
+  translations:
+  - grüner Tee
+  kanji: お茶
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おかし
+  translations:
+  - Süßigkeiten
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: パン
+  translations:
+  - Brot
+  - Brötchen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: りんご
+  translations:
+  - Apfel
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さかな
+  translations:
+  - Fisch
+  kanji: 魚
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: サッカ一
+  translations:
+  - Fußball
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さんぽ
+  translations:
+  - Spaziergang
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: サラダ
+  translations:
+  - Salat
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: せいと
+  translations:
+  - Schüler,in
+  kanji: 生と
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しんぐん
+  translations:
+  - Zeitung
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しょうせつ
+  translations:
+  - Roman
+  - Novelle
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: そして
+  translations:
+  - und (zwischen Sätzen)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しうか
+  translations:
+  - Wassermelone
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: する
+  translations:
+  - tun
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: たべもの
+  translations:
+  - Essen
+  - Nahrungsmittel
+  kanji: 食べもの
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: たべる
+  translations:
+  - essen
+  kanji: 食べる
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~たち"
+  translations:
+  - Suffix für Plural bei Menschen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: たまご
+  translations:
+  - Ei
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: てがみ
+  translations:
+  - Brief
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: と
+  translations:
+  - Partikel (Aufzählung und)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: うめ
+  translations:
+  - Pflaume
+  - Pflaumenbaum
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: やさい
+  translations:
+  - Gemüse
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: よむ
+  translations:
+  - lesen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: よる
+  translations:
+  - Abend
+  - am Abend
+  - abends
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ざっし
+  translations:
+  - Zeitschrift
+  - Illustrierte
+  kanji: 
+  lection: *1
+  info: ''
+file: 2.yaml

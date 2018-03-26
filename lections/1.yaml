@@ -1,0 +1,516 @@
+--- &1 !ruby/object:Lection
+name: '1'
+words:
+- !ruby/object:Word
+  kana: あなた
+  translations:
+  - du
+  - Sie
+  - ihr
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: あれ
+  translations:
+  - das (dort)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ありがとう
+  translations:
+  - Danke
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ぼく
+  translations:
+  - ich (als Junge)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ボ一ルペン
+  translations:
+  - Kugelschreiber
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: チョーク
+  translations:
+  - Kreide
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ちょっと
+  translations:
+  - etwas
+  - ein wenig
+  - kurz mal
+  - bitte
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ちゅうい
+  translations:
+  - Aufmerksamkeit
+  - Vorsicht
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: デパート
+  translations:
+  - Kaufhaus
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: です
+  translations:
+  - Kopula (sein)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: でわありません
+  translations:
+  - Kopula (nicht sein)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: どういたしまして
+  translations:
+  - Gern geschehen.
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ドア
+  translations:
+  - Tür
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ドイツご
+  translations:
+  - Deutsch
+  - deutsche Sprache
+  kanji: ドイツ語
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: どうもありがとう ございます。
+  translations:
+  - Vielen Dank.
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: どうぞよろしく
+  translations:
+  - Begrüßungsformel beim Kennenlernen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: え
+  translations:
+  - Bild
+  - Abbildung
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ええ
+  translations:
+  - ja (umgangsprachlich)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: えき
+  translations:
+  - Bahnhof
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: えんぴつ
+  translations:
+  - Bleistift
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ファイル
+  translations:
+  - Hefter
+  - Datei (EDV)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: がっこう
+  translations:
+  - Schule
+  kanji: 学校
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ごめんなさい。
+  translations:
+  - Entschuldigung! Es tut mir leid!
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はい
+  translations:
+  - Ja
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: " sou desu"
+  translations:
+  - ''
+  - Ja
+  - das stimmt.
+  kanji: はい、そうです。
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はじめまして。
+  translations:
+  - Begrüßungsformel beim Kennenlernen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はっきり
+  translations:
+  - deutlich
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はな
+  translations:
+  - Blume
+  - Blüte
+  kanji: 花
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ほん
+  translations:
+  - Buch
+  kanji: 本
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いいえ
+  translations:
+  - nein
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いす
+  translations:
+  - Stuhl
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゃあ
+  translations:
+  - als (dann)
+  - "(nun) gut"
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゃあまた。
+  translations:
+  - Also bis dann! Tschüss!
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: か
+  translations:
+  - Satzschlusspartikel (Fragesatz)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かばん
+  translations:
+  - Tasche
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: けしゴム
+  translations:
+  - Radiergummi
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こくばん
+  translations:
+  - Schreibtafel
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: こんいちは
+  translations:
+  - Guten Tag!
+  kanji: 今日は
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: これ
+  translations:
+  - dies
+  - das
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ください
+  translations:
+  - "…bitte (beim Bitten um etwas)"
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きょうかしょ
+  translations:
+  - Lehrbuch
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きょうしつ
+  translations:
+  - Klassenzimmer
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: まど
+  translations:
+  - Fenster
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: みんあ
+  translations:
+  - alle
+  - alles
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: もも
+  translations:
+  - Pfirsich
+  - Pfirsichbaum
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: もの
+  translations:
+  - Ding
+  - Sache
+  - Gegenstand
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: もっと
+  translations:
+  - mehr
+  - noch weiter
+  - noch…er
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なん
+  translations:
+  - was
+  kanji: 何
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いほん
+  translations:
+  - Japan
+  kanji: 日本
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にほんご
+  translations:
+  - Japanisch
+  kanji: 日本語
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にもつ
+  translations:
+  - Gepäck
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にっぽん
+  translations:
+  - Japan (förmlich)
+  kanji: 日本
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: の
+  translations:
+  - Partikel (Zuordnung)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ノ一ト
+  translations:
+  - Heft
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ページ
+  translations:
+  - Seite (eines Dokuments)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ペン
+  translations:
+  - Stift
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さくら
+  translations:
+  - Kirschbaum
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~さん"
+  translations:
+  - Suffix für Personennamen (höfl. Bezeichnung, Anrede)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さようなら。
+  translations:
+  - Auf Wiedersehen!
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: せんせい
+  translations:
+  - Lehrer,in
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しつもん
+  translations:
+  - Frage
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しゅくだい
+  translations:
+  - Hausaufgabe
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: それ
+  translations:
+  - das
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: すみません。
+  translations:
+  - Entschuldigung! Verzeihen Sie!
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: つぎ
+  translations:
+  - nächster,e,s
+  - folgender,e,es
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: つくえ
+  translations:
+  - Schreibtisch
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: は
+  translations:
+  - Partikel (Satzthema)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: わたし
+  translations:
+  - ich (neutral,als Mädchen und Erwachsene,r)
+  kanji: 私
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: やくす
+  translations:
+  - übersetzen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ゆっくり
+  translations:
+  - langsam
+  - in Ruhe
+  kanji: 
+  lection: *1
+  info: ''
+file: 1.yaml

@@ -1,0 +1,399 @@
+--- &1 !ruby/object:Lection
+name: '5'
+words:
+- !ruby/object:Word
+  kana: あつい
+  translations:
+  - heiß
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ビデオ
+  translations:
+  - Video
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: でんわ
+  translations:
+  - Telefon
+  kanji: 電話
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ディーブイディー
+  translations:
+  - DVD
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: どようび
+  translations:
+  - Samstag
+  kanji: 土曜日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: えいが
+  translations:
+  - Film
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~ふん"
+  translations:
+  - Minute
+  - Zählsuffix für Minuten
+  kanji: "~分"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~がつ"
+  translations:
+  - Zählsuffix für Monate
+  kanji: "~月"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: げつようび
+  translations:
+  - Montag
+  kanji: 月曜日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ごがつ
+  translations:
+  - Mai
+  kanji: 五月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はちがつ
+  translations:
+  - August
+  kanji: 八月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~はん"
+  translations:
+  - halb (bei Uhrzeit)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はなす
+  translations:
+  - sprechen
+  - sich unterhalten
+  kanji: 話す
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はたけ
+  translations:
+  - Feld
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: はやい
+  translations:
+  - schnell
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ひ
+  translations:
+  - Sonne
+  - Tag
+  kanji: 日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: いちがつ
+  translations:
+  - Januar
+  kanji: 一月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: インターネット
+  translations:
+  - Internet
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅうがつ
+  translations:
+  - Oktober
+  kanji: 十月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅういちがつ
+  translations:
+  - November
+  kanji: 十一月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: じゅうにがつ
+  translations:
+  - Dezember
+  kanji: 十二月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かわ
+  translations:
+  - Fluss
+  - Bach
+  kanji: 川
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: かようび
+  translations:
+  - Dienstag
+  kanji: 火曜日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: けいたいでんわ
+  translations:
+  - Mobiltelefon
+  kanji: けいたい電話
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: きにょうび
+  translations:
+  - Freitag
+  kanji: 金曜日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: くがつ
+  translations:
+  - September
+  kanji: 九月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: もくようび
+  translations:
+  - Donnerstag
+  kanji: 木曜日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なんがつ
+  translations:
+  - welcher Monat?
+  kanji: 何月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: なにょうび
+  translations:
+  - welcher Wochentag?
+  kanji: 何曜日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: に
+  translations:
+  - Partikel (Zeitangabe)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~にち"
+  translations:
+  - Zählsuffix für Tage
+  kanji: "~日"
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にちようび
+  translations:
+  - Sonntag
+  kanji: 日曜日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: にがつ
+  translations:
+  - Februar
+  kanji: 二月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おべんとう
+  translations:
+  - abgepackte Mahlzeit
+  - Lunchbox-Essen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おいしい
+  translations:
+  - schmackhaft
+  - lecker
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: おそい
+  translations:
+  - langsam
+  - spät
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: ろくがつ
+  translations:
+  - Juni
+  kanji: 六月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: "~さんへ"
+  translations:
+  - An Herrn…,Frau…
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: さんがつ
+  translations:
+  - März
+  kanji: 三月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: せき
+  translations:
+  - Sitzplatz
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しゃしｎ
+  translations:
+  - Foto
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しちがつ
+  translations:
+  - Juli
+  kanji: 七月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しがつ
+  translations:
+  - April
+  kanji: 四月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: しんかんせん
+  translations:
+  - Hochgeschwindigkeitszug
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: それから
+  translations:
+  - dann
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: すいようび
+  translations:
+  - Mittwoch
+  kanji: 水曜日
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: すわる
+  translations:
+  - sich hinsetzen
+  - sitzen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: てれび
+  translations:
+  - Fernsehen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: つき
+  translations:
+  - Monat
+  kanji: 月
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: つく
+  translations:
+  - ankommen
+  - eintreffen
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: つめたい
+  translations:
+  - kalt
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: うみ
+  translations:
+  - Meer
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: うつくしい
+  translations:
+  - schön
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: や
+  translations:
+  - Partikel (unvollständige Aufzählung)
+  kanji: 
+  lection: *1
+  info: ''
+- !ruby/object:Word
+  kana: やま
+  translations:
+  - Berg
+  - Gebirge
+  kanji: 山
+  lection: *1
+  info: ''
+file: 5.yaml
