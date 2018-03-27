@@ -1,25 +1,30 @@
+require 'yaml'
+
 require_relative 'mode'
 require_relative 'lection'
 require_relative 'test'
 require_relative 'user'
 require_relative 'mode'
+require_relative 'myio'
+
 
 class Tool
   def initialize(lection_path, user)
     @lection_path = lection_path
     @user = User.new(user, user)
+    @io = MyIO.new(true)
     create_modes(@user)
     @lections = Lection.load_dir(lection_path)
-    @status = :main
-    send @status
+    @status = :initialize
   end
 
   def main
+    @status = :main
     while @status == :main
-      print "#{@user.name}@jptool> "
-      input = gets.strip.downcase
-      puts input
-      case input
+      @io.print "#{@user.name}@jptool> "
+      input = @io.gets.strip
+      @io.puts input
+      case input.downcase
         when 'q'
           @status = :exit
         when 'exit'
@@ -38,7 +43,7 @@ class Tool
   end
 
   def help
-    puts 'help text'
+    @io.puts 'help text'
     @status = :main
   end
 
@@ -47,18 +52,18 @@ class Tool
   end
 
   def exit
-    puts 'ending program'
+    @io.puts 'ending program'
   end
 
   def test
-    puts 'starting test'
+    @io.puts 'starting test'
     test = Test.new(@lections['1'].words, [@modes[:kana2trans], @modes[:trans2kana]])
     test.run.each do |word, mode|
       unless @status == :test
         break
       end
-      puts mode.question(word)
-      input = gets.strip
+      @io.puts mode.question(word)
+      input = @io.gets.strip
       case input
         when 'q'
           @status = :main
@@ -66,10 +71,6 @@ class Tool
           mode.answer(word, input)
       end
     end
-  end
-
-  def load_lections
-
   end
 
   def load_user(file, words)
@@ -88,10 +89,10 @@ class Tool
   def create_proc(check, correct_answer)
     Proc.new do |word, guess|
       if word.send(check, guess)
-        puts "Correct."
+        @io.puts "Correct."
         true
       else
-        puts "Wrong.\n" + correct_answer.call(word)
+        @io.puts "Wrong.\n" + correct_answer.call(word)
         false
       end
     end
@@ -123,4 +124,47 @@ class Tool
   end
 end
 
+def generate_error_report(tool, exception)
+  report = ({'state' => tool, 'error' => exception,
+           'backtrace' => "#{exception.backtrace.join("\n")}: #{exception.message} (#{exception.class})"}.to_yaml)
+  i = 0
+  name = Time.new.strftime('%FT%R')
+  while File.exist? "#{name}_#{i}.yaml"
+    i += 1
+  end
+  file = File.open "#{name}_#{i}.yaml" , 'w'
+  file.puts report
+  puts "Report saved in #{name}_#{i}.yaml."
+end
+
+
+
 tool = Tool.new('lections', 'lisstem')
+begin
+  tool.main
+rescue => ex
+  flag = true
+  puts "An error occurred. An error report can be generated.
+      It will contain all of your inputs in this session as well as the current state of the program.
+      This includes all of the words and your user data."
+  while flag
+    print "Generate error report? (yes/no) "
+    input = gets.strip.downcase
+    case input
+      when 'y'
+        flag = false
+        generate_error_report(tool, ex)
+      when 'yes'
+        flag = false
+        generate_error_report(tool, ex)
+      when 'no'
+        flag = false
+      when 'n'
+        flag = false
+      when 'show'
+        puts "#{ex.backtrace.join("\n")}: #{ex.message} (#{ex.class})"
+      else
+        # do nothing
+    end
+  end
+end
