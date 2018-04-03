@@ -27,11 +27,10 @@ class History
   end
 
   def guess(word)
-    word = @guess[word].clone
-    if word.nil?
-      word = Array.new(10).fill(1)
+    if @guess[word].nil?
+      @guess[word] = Array.new(10).fill(1)
     end
-    word
+    @guess[word].clone
   end
 
   def my_to_yaml
