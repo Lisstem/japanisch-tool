@@ -1,4 +1,5 @@
 require_relative 'hepburn'
+
 class Word
   attr_reader :kana, :kanji, :translations, :lection, :info
   def initialize(kana, translations, kanji = nil, lection = 'default', info = '')
@@ -38,7 +39,7 @@ class Word
 
   def match_kana(guess)
     guess = guess.strip
-    puts "#{guess}, #{guess.to_katakana}, #{guess.to_hiragana}"
+    #puts "#{guess}, #{guess.to_katakana}, #{guess.to_hiragana}" # for debugging purposes
     @kana.downcase == guess.to_katakana || @kana.downcase == guess.to_hiragana
   end
 

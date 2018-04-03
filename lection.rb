@@ -3,12 +3,13 @@ require_relative 'word.rb'
 
 class Lection
   attr_reader :name, :words
-  attr_accessor :file
+  attr_accessor :file, :info
 
-  def initialize(name, words = [], file = nil)
+  def initialize(name, words = [], file = nil, info = '')
     @name = name
     @words = words
     @file = file
+    @info = info
   end
 
   def add_word(word)
@@ -23,6 +24,10 @@ class Lection
     else
       nil
     end
+  end
+
+  def to_s
+    "#{@name} (#{@words.count} Words)#{" - #{@info}" unless (@info == '' || @info.nil?)}"
   end
 
   def save(file = @file)

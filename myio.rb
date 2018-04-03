@@ -1,13 +1,12 @@
 class MyIO
   def initialize(debug = false)
     @debug = debug
-    @out = []
-    @in = []
+    @log = []
   end
 
   def puts(value)
     if @debug
-     @out << value
+     @log << [:out, value.to_s + "\n"]
     end
     Kernel.puts(value)
   end
@@ -15,14 +14,14 @@ class MyIO
   def gets
     input = Kernel.gets
     if @debug
-      @in << input
+      @log << [:in, input]
     end
     input
   end
 
   def print(value)
     if @debug
-      @out << value
+      @log << [:out, value.to_s]
     end
     Kernel.print(value)
   end

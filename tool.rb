@@ -15,6 +15,11 @@ class Tool
     @io = MyIO.new(true)
     create_modes(@user)
     @lections = Lection.load_dir(lection_path)
+    all = Lection.new('all', [], nil, 'Contains all loaded words.')
+    @lections.each_value do |lection|
+      all.join(lection)
+    end
+    @lections['all'] = all
     @status = :initialize
   end
 
@@ -22,9 +27,16 @@ class Tool
     @status = :main
     while @status == :main
       @io.print "#{@user.name}@jptool> "
-      input = @io.gets.strip
-      @io.puts input
-      case input.downcase
+      input = @io.gets
+      if input.nil?
+        break
+      end
+      input = input.split(' ')
+      if input.empty?
+        next
+      end
+
+      case input[0].strip.downcase
         when 'q'
           @status = :exit
         when 'exit'
@@ -35,29 +47,58 @@ class Tool
           @status = :help
         when 'test'
           @status = :test
+        when 'lections'
+          @status = :lections
         else
+          input.unshift(nil)
           @status = :none
       end
-      send @status
+      send @status, *(input[1..-1])
     end
   end
 
-  def help
-    @io.puts 'help text'
+  def lections(*args)
+    out = 'Loaded Lections:'
+    @lections.each_value do |lection|
+      out << "\n\t- #{lection}"
+    end
+    @io.puts out
     @status = :main
   end
 
-  def none
+  def help(*args)
+    @io.puts Tool.help_texts[args[0]]
     @status = :main
   end
 
-  def exit
+  def none(*args)
+    unless args.empty?
+      @io.puts "Unknown command '#{args[0]}'.\nUse 'help' for help."
+    end
+    @status = :main
+  end
+
+  def exit(*args)
     @io.puts 'ending program'
   end
 
-  def test
+  def test(*args)
+    if args.empty?
+      args = ['all']
+    end
     @io.puts 'starting test'
-    test = Test.new(@lections['1'].words, [@modes[:kana2trans], @modes[:trans2kana]])
+    words = Lection.new('test')
+    args.each do |arg|
+      other = @lections[arg]
+      if other.nil?
+        @io.puts "Could not find lection \"#{arg}\"."
+      else
+        words.join(other)
+      end
+    end
+    @io.puts "Enter 'q' to end the test."
+
+    test = Test.new(words.words, [@modes[:kana2trans], @modes[:trans2kana]])
     test.run.each do |word, mode|
       unless @status == :test
         break
@@ -71,6 +112,7 @@ class Tool
           mode.answer(word, input)
       end
     end
+    @status = :main
   end
 
   def load_user(file, words)
@@ -121,6 +163,24 @@ class Tool
     @modes[:trans2kana] =     Mode.new(user.history(:trans2kana), Proc.new{|word| "Translate #{word.translations.join(', ')} (kana)."},
                                        create_proc(:match_kana,
                                                    Proc.new{|word| "The correct answer is #{word.kana}."}))
+  end
+
+  @help_texts = {nil => "Commands:
+\thelp:          Get help to commands.
+\tlections:      Prints the names of all lections.
+\tquit, q, exit: Ends the program.
+\ttest:          Starts a test.
+
+Try 'test command' to get more info about a command", 'help' => "help [command]
+\tPrints list of commands if no command is given,
+\totherwise gives more information about the given command.", 'test' => "test [lection1] [lection2] [...]
+\tStarts a test with the lections lection1, lection2, ...
+\tIf no lection is given all lections will be included.", 'exit' => "quit, q, exit\n\tEnds the program.",
+  'q' => "quit, q, exit\n\tEnds the program.", 'quit' => "quit, q, exit\n\tEnds the program.",
+  'lections' => "lections
+\tPrints the names of all lections."}
+  def self.help_texts
+    return @help_texts
   end
 end
 
