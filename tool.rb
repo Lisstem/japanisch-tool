@@ -51,12 +51,114 @@ class Tool
   end
 
   def lections(*args)
-    out = 'Loaded Lections:'
-    @lections.each_value do |lection|
-      out << "\n\t- #{lection}"
+    if args.empty?
+      out = 'Loaded Lections:'
+      @lections.each_value do |lection|
+        out << "\n\t- #{lection}"
+      end
+      @io.puts out
+    else
+      lection = args[0].strip
+      if @lections[lection].nil?
+        choice("Lection '#{lection}' does not exist.\nCreate this Lection?", Proc.new {@status = :lections_create
+            lections_create(lection, "lections/#{lection}.yaml", '')})
+      else
+        lection = @lections[lection]
+        @io.puts("#{lection.name}:")
+        @io.puts("\tFilename: #{lection.file}")
+        @io.puts("\tInfo: #{lection.info}")
+        @io.puts("\tWords (#{lection.words.count}):")
+        lection.words.each do |word|
+          @io.puts("\t\t- #{word}")
+        end
+        unless lection.name == 'all'
+          choice('Add words?', Proc.new{@status = :lections_words
+              lections_words(lection, :lections);lection.save})
+        end
+      end
     end
-    @io.puts out
     @status = :main
+  end
+
+  def lections_create(*args)
+    name = nil
+    @io.puts("Create lection:")
+    while name.nil?
+      @io.print("\tName#{" (#{args[0].strip})" unless args[0].nil?}: ")
+      name = @io.gets.strip
+      if name == '' && args[0].nil?
+        @io.puts("A name must be given.")
+        next
+      end
+      name = args[0].strip if name == ''
+      if @lections.include? name
+        @io.puts("Lection '#{name}' already exists. Please choose another name.")
+        name = nil
+        next
+      end
+    end
+    file = nil
+    while file.nil?
+      @io.print("\tFilename#{" (#{args[1].strip})" unless args[1].nil?}: ")
+      file = @io.gets.strip
+      if file == '' && args[1].nil?
+        @io.puts("A name must be given.")
+        next
+      end
+      file = args[1].strip if file == ''
+    end
+    @io.print("\tInformation#{" (#{args[2].strip})" unless args[2].nil?}: ")
+    info = @io.gets.strip!
+    info = args[2] if info == ''
+    info.gsub!('\n', "\n")
+    @lections[name] = lection = Lection.new(name, [], file, info)
+    choice('Add words?', Proc.new{@status = :lections_words
+        lections_words(lection, :lections_create)})
+    lection.save
+    @status = :lections
+  end
+
+  def lections_words(lection, last, *args)
+    @io.puts("Added words to lection '#{lection.name}'.\nSeparete translation with ', '.\nPress 'q' to exit.")
+    while @status == :lections_words
+      kana = ''
+      while kana == ''
+        @io.print('Kana: ')
+        kana = @io.gets.strip
+        if kana.downcase == 'q'
+          return
+        end
+        if kana == ''
+          @io.puts('Kana cannot be empty.')
+        end
+      end
+      translations = nil
+      while translations.nil?
+        @io.print('Translations: ')
+        translations = @io.gets.strip
+        if translations.downcase == 'q'
+          return
+        end
+        translations = translations.split(', ').map{|translation| translation.strip}.select{|translation| translation != ''}
+        if translations.empty?
+          @io.puts('There must be at least one translation.')
+          translations = nil
+        end
+      end
+      @io.print('Kanji: ')
+      kanji = @io.gets.strip
+      if kanji.downcase == 'q'
+        return
+      end
+      @io.print('Information: ')
+      info = @io.gets.strip
+      if info.downcase == 'q'
+        return
+      end
+      word = Word.new(kana, translations, kanji, lection.name, info)
+      choice("Word: #{word}\nAdd this word?", Proc.new{lection.add_word(word)})
+      choice('Add another word?', Proc.new{}, Proc.new{@status = last})
+    end
   end
 
   def help(*args)
@@ -84,7 +186,7 @@ class Tool
     args.each do |arg|
       other = @lections[arg]
       if other.nil?
-        @io.puts "Could not find lection \"#{arg}\"."
+        @io.puts "Could not find lection '#{arg}'."
       else
         words.join(other)
       end
@@ -156,6 +258,30 @@ class Tool
     @modes[:trans2kana] =     Mode.new(user.history(:trans2kana), Proc.new{|word| "Translate #{word.translations.join(', ')} (kana)."},
                                        create_proc(:match_kana,
                                                    Proc.new{|word| "The correct answer is #{word.kana}."}))
+  end
+
+  def choice(question, yes = Proc.new {}, no = Proc.new {})
+    flag = true
+    while flag
+      @io.print "#{question} (yes/no) "
+      input = @io.gets.strip.downcase
+      case input
+        when 'y'
+          flag = false
+          yes.call
+        when 'yes'
+          flag = false
+          yes.call
+        when 'no'
+          flag = false
+          no.call
+        when 'n'
+          flag = false
+          no.call
+        else
+          # do nothing
+      end
+    end
   end
 
   @help_texts = {nil => "Commands:
