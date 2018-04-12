@@ -13,6 +13,9 @@ class MyIO
 
   def gets
     input = Kernel.gets
+    if input.nil?
+      exit
+    end
     if @debug
       @log << [:in, input]
     end

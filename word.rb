@@ -11,7 +11,7 @@ class Word
   end
 
   def to_s
-    "#{kana}#{" #{kanji}" unless kanji.nil?} #{translations.join(',')}"
+    "#{kana}#{" #{kanji}" unless kanji.nil?} #{translations.join(', ')}"
   end
 
   def match_translation(guess)
