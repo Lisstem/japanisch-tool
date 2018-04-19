@@ -84,8 +84,7 @@ class Tool
     name = nil
     @io.puts("Create lection:")
     while name.nil?
-      @io.print("\tName#{" (#{args[0].strip})" unless args[0].nil?}: ")
-      name = @io.gets.strip
+      name = @io.readline("\tName#{" (#{args[0].strip})" unless args[0].nil?}: ").strip
       if name == '' && args[0].nil?
         @io.puts("A name must be given.")
         next
@@ -99,16 +98,14 @@ class Tool
     end
     file = nil
     while file.nil?
-      @io.print("\tFilename#{" (#{args[1].strip})" unless args[1].nil?}: ")
-      file = @io.gets.strip
+      file = @io.readline("\tFilename#{" (#{args[1].strip})" unless args[1].nil?}: ").strip
       if file == '' && args[1].nil?
         @io.puts("A name must be given.")
         next
       end
       file = args[1].strip if file == ''
     end
-    @io.print("\tInformation#{" (#{args[2].strip})" unless args[2].nil?}: ")
-    info = @io.gets.strip!
+    info = @io.readline("\tInformation#{" (#{args[2].strip})" unless args[2].nil?}: ").strip!
     info = args[2] if info == ''
     info.gsub!('\n', "\n")
     @lections[name] = lection = Lection.new(name, [], file, info)
@@ -119,12 +116,11 @@ class Tool
   end
 
   def lections_words(lection, last, *args)
-    @io.puts("Added words to lection '#{lection.name}'.\nSeparete translation with ', '.\nPress 'q' to exit.")
+    @io.puts("Added words to lection '#{lection.name}'.\nSeparete translations with ', '.\nPress 'q' to exit.")
     while @status == :lections_words
       kana = ''
       while kana == ''
-        @io.print('Kana: ')
-        kana = @io.gets.strip
+        kana = @io.readline('Kana: ').strip
         if kana.downcase == 'q'
           return
         end
@@ -134,8 +130,7 @@ class Tool
       end
       translations = nil
       while translations.nil?
-        @io.print('Translations: ')
-        translations = @io.gets.strip
+        translations = @io.readline('Translations: ').strip
         if translations.downcase == 'q'
           return
         end
@@ -145,13 +140,11 @@ class Tool
           translations = nil
         end
       end
-      @io.print('Kanji: ')
-      kanji = @io.gets.strip
+      kanji = @io.readline('Kanji: ').strip
       if kanji.downcase == 'q'
         return
       end
-      @io.print('Information: ')
-      info = @io.gets.strip
+      info = @io.readline('Information: ').strip
       if info.downcase == 'q'
         return
       end
@@ -263,8 +256,7 @@ class Tool
   def choice(question, yes = Proc.new {}, no = Proc.new {})
     flag = true
     while flag
-      @io.print "#{question} (yes/no) "
-      input = @io.gets.strip.downcase
+      input = @io.readline("#{question} (yes/no) ").strip.downcase
       case input
         when 'y'
           flag = false
