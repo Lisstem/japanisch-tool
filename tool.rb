@@ -12,7 +12,8 @@ class Tool
   def initialize(lection_path, user)
     @lection_path = lection_path
     @user = User.new(user, user)
-    @io = MyIO.new(true)
+    @commands = %w(q exit quit help test lections)
+    @io = MyIO.new(@commands, true)
     create_modes(@user)
     @lections = Lection.load_dir(lection_path)
     all = Lection.new('all', [], nil, 'Contains all loaded words.')
@@ -26,8 +27,7 @@ class Tool
   def main
     @status = :main
     while @status == :main
-      @io.print "#{@user.name}@jptool> "
-      input = @io.gets
+      input = @io.readline("#{@user.name}@jptool> ", true)
       if input.nil?
         break
       end
@@ -36,22 +36,15 @@ class Tool
         next
       end
 
-      case input[0].strip.downcase
-        when 'q'
+      input[0] = input[0].strip.downcase
+      if @commands.include? input[0]
+        @status = input[0].to_sym
+        if @status == :q || @status == :quit
           @status = :exit
-        when 'exit'
-          @status = :exit
-        when 'quit'
-          @status = :exit
-        when 'help'
-          @status = :help
-        when 'test'
-          @status = :test
-        when 'lections'
-          @status = :lections
-        else
-          input.unshift(nil)
-          @status = :none
+        end
+      else
+        input.unshift(nil)
+        @status = :none
       end
       send @status, *(input[1..-1])
     end
@@ -104,7 +97,7 @@ class Tool
         break
       end
       @io.puts mode.question(word)
-      input = @io.gets.strip
+      input = @io.readline('answer: ').strip
       case input
         when 'q'
           @status = :main
