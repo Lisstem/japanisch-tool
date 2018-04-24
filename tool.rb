@@ -71,7 +71,7 @@ class Tool
         lection.words.each do |word|
           @io.puts("\t\t- #{word}")
         end
-        unless lection.name == 'all'
+        unless lection == @lections['all']
           choice('Add words?', Proc.new{@status = :lections_words
               lections_words(lection, :lections);lection.save})
         end
@@ -116,6 +116,11 @@ class Tool
   end
 
   def lections_words(lection, last, *args)
+    if lection == @lections['all']
+      @io.puts("You cannot add words to lection 'all'.")
+      @status = last
+      return
+    end
     @io.puts("Added words to lection '#{lection.name}'.\nSeparete translations with ', '.\nPress 'q' to exit.")
     while @status == :lections_words
       kana = ''
@@ -149,7 +154,7 @@ class Tool
         return
       end
       word = Word.new(kana, translations, kanji, lection.name, info)
-      choice("Word: #{word}\nAdd this word?", Proc.new{lection.add_word(word)})
+      choice("Word: #{word}\nAdd this word?", Proc.new{lection.add_word(word);@lections['all'].add_word(word)})
       choice('Add another word?', Proc.new{}, Proc.new{@status = last})
     end
   end
@@ -278,7 +283,7 @@ class Tool
 
   @help_texts = {nil => "Commands:
 \thelp:          Get help to commands.
-\tlections:      Prints the names of all lections.
+\tlections:      Prints information about the loaded lections.
 \tquit, q, exit: Ends the program.
 \ttest:          Starts a test.
 
@@ -288,8 +293,11 @@ Try 'test command' to get more info about a command", 'help' => "help [command]
 \tStarts a test with the lections lection1, lection2, ...
 \tIf no lection is given all lections will be included.", 'exit' => "quit, q, exit\n\tEnds the program.",
   'q' => "quit, q, exit\n\tEnds the program.", 'quit' => "quit, q, exit\n\tEnds the program.",
-  'lections' => "lections
-\tPrints the names of all lections."}
+  'lections' => "lections [lection]
+\tPrints the names of all lections if no lection is given,
+\totherwise prints the full information about the given lection.
+\tIf the lection does not exist, you can create it.
+\tYou can also add words to the lection."}
   def self.help_texts
     return @help_texts
   end
