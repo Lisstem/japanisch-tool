@@ -1,4 +1,4 @@
-require 'yaml'
+#require 'yaml'
 #TODO documentation
 class Hepburn
   attr_writer :next_char
@@ -52,7 +52,13 @@ class Hepburn
   end
 
   def self.to_romaji(string)
-    @romaji.convert(string)
+    romaji = @romaji.convert(string)
+    romaji.gsub!('aー', 'aa')
+    romaji.gsub!('iー', 'ii')
+    romaji.gsub!('uー', 'uu')
+    romaji.gsub!('eー', 'ee')
+    romaji.gsub!('oー', 'ou')
+    romaji
   end
 
   #TODO apply downcase only to converted char
