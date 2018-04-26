@@ -1,18 +1,19 @@
 require 'yaml'
 
 class History
-  @factors = [10, 7, 4, 3, 3, 2, 2, 1, 1, 1]
+  def factors
+    [10, 7, 4, 3, 3, 2, 2, 1, 1, 1]
+  end
 
   def initialize
     @guess = {}
   end
 
   def priority(word)
-    return 1
     word = guess(word)
     prio = 0
     dividend = 0.0
-    word.zip(@factors).each do |right, factor|
+    word.zip(factors).each do |right, factor|
       prio += right*factor
       dividend += factor
     end
@@ -33,21 +34,27 @@ class History
     @guess[word].clone
   end
 
-  def my_to_yaml
+  def yaml_copy
     new_guess = {}
     @guess.each_pair do |word, array|
       new_guess[word.my_hash] = array
     end
     old_guess = @guess
     @guess = new_guess
-    yaml = self.to_yaml
+    copy = self.clone
     @guess = old_guess
-    yaml
+    copy
   end
 
   def yaml_finish(words)
+    new = {}
     @guess.each_key do |key|
-      @guess[words[key]] = @guess.delete[key]
+      if words[key].nil?
+        puts "Warning userdata for word\n#{key}\n exists but is not loaded."
+      else
+        new[words[key]] = @guess[key]
+      end
     end
+    @guess = new
   end
 end

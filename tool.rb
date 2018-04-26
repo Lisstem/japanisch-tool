@@ -10,18 +10,20 @@ require_relative 'myio'
 
 class Tool
   def initialize(lection_path, user)
-    @lection_path = lection_path
-    @user = User.new(user, user)
+    @status = :initialize
     @commands = %w(q exit quit help test lections)
     @io = MyIO.new(@commands, true)
-    create_modes(@user)
+
+    @lection_path = lection_path
     @lections = Lection.load_dir(lection_path)
     all = Lection.new('all', [], nil, 'Contains all loaded words.')
     @lections.each_value do |lection|
       all.join(lection)
     end
     @lections['all'] = all
-    @status = :initialize
+
+    @user = User.from_file(user, (@lections['all'].words.map{|x| [x.my_hash, x]}).to_h)
+    create_modes(@user)
   end
 
   def main
@@ -48,6 +50,7 @@ class Tool
       end
       send @status, *(input[1..-1])
     end
+    @user.save
   end
 
   def lections(*args)
@@ -318,7 +321,7 @@ end
 
 
 
-tool = Tool.new('lections', 'lisstem')
+tool = Tool.new('lections', 'lisstem.yaml')
 begin
   tool.main
 rescue => ex

@@ -1,3 +1,4 @@
+require 'digest'
 require_relative 'hepburn'
 
 class Word
@@ -48,6 +49,6 @@ class Word
   end
 
   def my_hash
-    self.to_s.hash
+    Digest::SHA256.hexdigest "#{kana}#{translations.join(', ')}"
   end
 end
