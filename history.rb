@@ -1,5 +1,3 @@
-require 'yaml'
-
 class History
   def factors
     [10, 7, 4, 3, 3, 2, 2, 1, 1, 1]
@@ -37,7 +35,11 @@ class History
   def yaml_copy
     new_guess = {}
     @guess.each_pair do |word, array|
-      new_guess[word.my_hash] = array
+      if word.respond_to? :my_hash
+        new_guess[word.my_hash] = array
+      else
+        new_guess[word] = array
+      end
     end
     old_guess = @guess
     @guess = new_guess
@@ -51,6 +53,7 @@ class History
     @guess.each_key do |key|
       if words[key].nil?
         puts "Warning userdata for word\n#{key}\n exists but is not loaded."
+        new[key] = @guess[key]
       else
         new[words[key]] = @guess[key]
       end
