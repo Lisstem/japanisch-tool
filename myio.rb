@@ -30,9 +30,18 @@ class MyIO
     input
   end
 
-  def readline(prompt = '', history = false)
+  def readline(prompt = '', default_text = nil , history = false)
     if @debug && !prompt.nil? && !(prompt == '')
       @log << [:out, prompt]
+    end
+    unless default_text.nil? || default_text == ''
+      Readline.pre_input_hook = -> do
+        Readline.insert_text default_text
+        Readline.redisplay
+
+        # Remove the hook right away.
+        Readline.pre_input_hook = nil
+      end
     end
     input = Readline.readline(prompt, history)
     if input.nil?

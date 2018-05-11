@@ -55,6 +55,8 @@ class User
       if File.file?(file)
         file = File.open(file, 'w')
       else
+        path = (file.split('/'))[0...-1].join('/')
+        FileUtils.mkdir_p(path) unless path == ''
         file = File.new(file, 'w')
       end
       file.write(self.to_yaml)

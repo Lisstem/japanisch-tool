@@ -29,7 +29,7 @@ class Tool
   def main
     @status = :main
     while @status == :main
-      input = @io.readline("#{@user.name}@jptool> ", true)
+      input = @io.readline("#{@user.name}@jptool> ", nil,true)
       if input.nil?
         break
       end
@@ -64,7 +64,7 @@ class Tool
       lection = args[0].strip
       if @lections[lection].nil?
         choice("Lection '#{lection}' does not exist.\nCreate this Lection?", Proc.new {@status = :lections_create
-            lections_create(lection, "lections/#{lection}.yaml", '')})
+            lections_create(lection)})
       else
         lection = @lections[lection]
         @io.puts("#{lection.name}:")
@@ -84,32 +84,30 @@ class Tool
   end
 
   def lections_create(*args)
-    name = nil
+    name = ''
     @io.puts("Create lection:")
-    while name.nil?
-      name = @io.readline("\tName#{" (#{args[0].strip})" unless args[0].nil?}: ").strip
-      if name == '' && args[0].nil?
+    while name == ''
+      default = args[0].nil? ? '' : args[0].strip
+      name = @io.readline("\tName: ", default).strip
+      if name == '' && default == ''
         @io.puts("A name must be given.")
         next
       end
-      name = args[0].strip if name == ''
+      name = default if name == ''
       if @lections.include? name
         @io.puts("Lection '#{name}' already exists. Please choose another name.")
-        name = nil
+        name = ''
         next
       end
     end
-    file = nil
-    while file.nil?
-      file = @io.readline("\tFilename#{" (#{args[1].strip})" unless args[1].nil?}: ").strip
-      if file == '' && args[1].nil?
-        @io.puts("A name must be given.")
-        next
-      end
-      file = args[1].strip if file == ''
+    file = ''
+    while file == ''
+      default = args[1].nil? ? "lections/#{name}.yaml" : args[1].strip
+      file = @io.readline("\tFilename: ", default).strip
+      file = default if file == ''
     end
-    info = @io.readline("\tInformation#{" (#{args[2].strip})" unless args[2].nil?}: ").strip!
-    info = args[2] if info == ''
+    info = @io.readline("\tInformation: ", args[2].nil? ? nil : args[2].strip).strip
+    info = args[2] if (info == '' && !args[2].nil?)
     info.gsub!('\n', "\n")
     @lections[name] = lection = Lection.new(name, [], file, info)
     choice('Add words?', Proc.new{@status = :lections_words
